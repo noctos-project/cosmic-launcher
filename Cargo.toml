@@ -73,6 +73,9 @@ zbus = { version = "6.2.1", default-features = false, features = ["tokio"] }
 [patch.crates-io]
 calloop = { path = "../cosmic-comp/noctos-vendor/calloop" }
 wayland-backend = { path = "../cosmic-comp/noctos-vendor/wayland-backend" }
+# pulled in by softbuffer (software renderer); rustix has no ioctl opcode
+# helpers on illumos
+drm-ffi = { path = "../cosmic-comp/noctos-vendor/drm-ffi-0.7" }
 
 # NoctOS: pop-os/winit at the pinned rev 9567503 plus an illumos arm for
 # is_main_thread. Every crate of that workspace is redirected so the types

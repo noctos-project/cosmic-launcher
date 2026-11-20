@@ -1625,8 +1625,6 @@ dependencies = [
 [[package]]
 name = "drm-ffi"
 version = "0.7.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "41334f8405792483e32ad05fbb9c5680ff4e84491883d2947a4757dc54cb2ac6"
 dependencies = [
  "drm-sys",
  "rustix 0.38.44",
