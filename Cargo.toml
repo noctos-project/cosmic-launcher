@@ -73,3 +73,20 @@ zbus = { version = "6.2.1", default-features = false, features = ["tokio"] }
 [patch.crates-io]
 calloop = { path = "../cosmic-comp/noctos-vendor/calloop" }
 wayland-backend = { path = "../cosmic-comp/noctos-vendor/wayland-backend" }
+
+# NoctOS: pop-os/winit at the pinned rev 9567503 plus an illumos arm for
+# is_main_thread. Every crate of that workspace is redirected so the types
+# stay identical across the dependency graph.
+[patch."https://github.com/pop-os/winit.git"]
+dpi = { path = "noctos-vendor/winit/dpi" }
+winit = { path = "noctos-vendor/winit/winit" }
+winit-android = { path = "noctos-vendor/winit/winit-android" }
+winit-appkit = { path = "noctos-vendor/winit/winit-appkit" }
+winit-common = { path = "noctos-vendor/winit/winit-common" }
+winit-core = { path = "noctos-vendor/winit/winit-core" }
+winit-orbital = { path = "noctos-vendor/winit/winit-orbital" }
+winit-uikit = { path = "noctos-vendor/winit/winit-uikit" }
+winit-wayland = { path = "noctos-vendor/winit/winit-wayland" }
+winit-web = { path = "noctos-vendor/winit/winit-web" }
+winit-win32 = { path = "noctos-vendor/winit/winit-win32" }
+winit-x11 = { path = "noctos-vendor/winit/winit-x11" }
