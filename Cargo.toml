@@ -93,3 +93,8 @@ winit-wayland = { path = "noctos-vendor/winit/winit-wayland" }
 winit-web = { path = "noctos-vendor/winit/winit-web" }
 winit-win32 = { path = "noctos-vendor/winit/winit-win32" }
 winit-x11 = { path = "noctos-vendor/winit/winit-x11" }
+
+# NoctOS: pop-os/softbuffer (tag cosmic-4.0, c2b2c19) with a POSIX-correct
+# shm_open name.
+[patch."https://github.com/pop-os/softbuffer"]
+softbuffer = { path = "noctos-vendor/softbuffer" }
