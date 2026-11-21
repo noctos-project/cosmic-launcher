@@ -72,6 +72,7 @@ zbus = { version = "6.2.1", default-features = false, features = ["tokio"] }
 # that fork checked out next to this tree as ../cosmic-comp.
 [patch.crates-io]
 calloop = { path = "../cosmic-comp/noctos-vendor/calloop" }
+polling = { path = "../cosmic-comp/noctos-vendor/polling" }
 wayland-backend = { path = "../cosmic-comp/noctos-vendor/wayland-backend" }
 # pulled in by softbuffer (software renderer); rustix has no ioctl opcode
 # helpers on illumos
